@@ -13,6 +13,13 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".AuthActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/title_activity_main"
@@ -20,8 +27,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-        <!-- Main activity -->
+        </activity> <!-- Main activity -->
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -38,7 +44,7 @@
             android:name=".TokenActivity"
             android:label="@string/app_name_short"
             android:theme="@style/AppTheme"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden" />
         <!--
         This activity declaration is merged with the version from the library manifest.
         It demonstrates how an https redirect can be captured, in addition to or instead of

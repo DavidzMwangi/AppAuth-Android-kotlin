@@ -9,6 +9,7 @@ android {
         applicationId 'net.openid.appauthdemo'
         project.archivesBaseName = 'appauth-demoapp'
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
 
         // Make sure this is consistent with the redirect URI used in res/raw/auth_config.json,
         // or specify additional redirect URIs in AndroidManifest.xml
@@ -58,6 +59,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.multidex:multidex:2.0.1'
 
     annotationProcessor "com.github.bumptech.glide:compiler:${project.googleVersions.glide}"
 }

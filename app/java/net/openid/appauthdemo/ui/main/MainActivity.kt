@@ -1,4 +1,4 @@
-package net.openid.appauthdemo.ui
+package net.openid.appauthdemo.ui.main
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -8,7 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import net.openid.appauthdemo.R
-import net.openid.appauthdemo.ui.databinding.ActivityMainBinding
+import net.openid.appauthdemo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
